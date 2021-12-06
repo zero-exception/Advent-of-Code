@@ -3,13 +3,11 @@
  */
 package moe.kadosawa.aoc
 
-class App {
-    val greeting: String
-        get() {
-            return "Hello World!"
-        }
-}
+fun input(filename: String) = {}::class.java.classLoader
+    ?.getResourceAsStream(filename)
+    ?.reader()
 
 fun main() {
-    println(App().greeting)
+    val m = moe.kadosawa.aoc.day3.Main()
+    m.run()
 }
